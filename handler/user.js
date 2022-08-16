@@ -304,7 +304,7 @@ module.exports = {
   getAllUsers,
   getOneUser,
   fundWallet,
-  deleteUsers,
+
   withdrawFunds,
   transferFunds,
 };

@@ -7,13 +7,13 @@ const {
   login,
   getAllUsers,
   getOneUser,
-  deleteUsers,
+
   fundWallet,
   withdrawFunds,
   transferFunds,
 } = require("../handler/user");
 
-router.route("/user").post(register).get(getAllUsers).delete(deleteUsers);
+router.route("/user").post(register).get(getAllUsers);
 router.route("/user/:userId").get(getOneUser);
 router.post("/user/login", login);
 router.post("/user/:userId/fund-wallet", authoriseUser, fundWallet);
