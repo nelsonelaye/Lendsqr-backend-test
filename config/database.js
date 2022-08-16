@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
-
-const url = "mongodb://localhost/lendsqrWallet";
+require("dotenv").config();
+// const url = "mongodb://localhost/lendsqrWallet";
+const url = process.env.ATLAS;
 
 mongoose
   .connect(url)
